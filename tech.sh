@@ -13,7 +13,7 @@ clear
 echo "===================================="
 echo "Username : mbahngaur"
 echo "Password : 123"
-echo "https://dashboard.ngrok.com/get-started/your-authtoken"
+echo "ngrok : https://dashboard.ngrok.com/get-started/your-authtoken"
 echo "SALAM NGAUR.COM DON'T CLOSE THIS TAB"
 echo "===================================="
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
