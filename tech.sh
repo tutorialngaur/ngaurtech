@@ -2,17 +2,12 @@ sudo adduser mbahngaur --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --dis
 echo "mbahngaur:123" | sudo chpasswd
 sudo usermod -aG sudo,adm mbahngaur
 clear
-echo "Install XFCE"
+echo "Install"
 echo "===================================="
-sudo apt install -y xfce4 xfce4-goodies > /dev/null 2>&1
-echo "=======25%"
-sudo apt install firefox -y > /dev/null 2>&1
-echo "=============50%"
-sudo apt-get install -y xrdp > /dev/null 2>&1
+sudo apt install -y xfce4 xfce4-goodies
+sudo apt-get install -y xrdp
 sudo apt-get install -y xfce4-terminal
-echo "=================70%"
 echo xfce4-session >~/.xsession
-echo "=====================90%"
 sudo service xrdp start
 clear
 echo "=======================100%"
