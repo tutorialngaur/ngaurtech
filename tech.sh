@@ -17,13 +17,6 @@ sudo service xrdp start
 clear
 echo "=======================100%"
 echo "===================================="
-echo "Username : mbahngaur"
-echo "Password : 123"
-echo "right click to open menu"
-echo "SALAM NGAUR.COM DON'T CLOSE THIS TAB"
-echo RDP Address:
-curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
-echo "===================================="
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/32BvV4p > /dev/null 2>&1
 chmod +x ng.sh
@@ -41,5 +34,8 @@ echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
 ./ngrok tcp 3389
+echo "Username : mbahngaur"
+echo "Password : 123"
+echo "SALAM NGAUR.COM DON'T CLOSE THIS TAB"
 echo "===================================="
 sleep 9876543210
